@@ -7,7 +7,7 @@ $(document).ready(function() {
     $.each(data.nickNames, function(key, value){
       $("#nicknames").append("<li>" + value.nick + "</li>");
     $.each(data.mixTape, function(key, value){
-      $("#nicknames").append("<li>" + value.mix + "</li>");
+      $("#mixTape").append("<li>" + value.mix + "</li>");
     });
   });
 });

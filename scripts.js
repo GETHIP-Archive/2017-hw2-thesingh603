@@ -6,6 +6,8 @@ $(document).ready(function() {
     $("#profile-picture").attr("src", data.picture);
     $.each(data.nickNames, function(key, value){
       $("#nicknames").append("<li>" + value.nick + "</li>");
+    $.each(data.mixTape, function(key, value){
+      $("#nicknames").append("<li>" + value.mix + "</li>");
     });
   });
 });
